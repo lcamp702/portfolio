@@ -1,0 +1,350 @@
+/* Fonts are stored in the fonts folder so the site does not depend on another server. */
+@font-face {
+  font-family: "Archivo";
+  font-weight: 500;
+  src: url("fonts/archivo-latin-500-normal.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Archivo";
+  font-weight: 700;
+  src: url("fonts/archivo-latin-700-normal.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Archivo";
+  font-weight: 800;
+  src: url("fonts/archivo-latin-800-normal.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Source Serif 4";
+  font-weight: 400;
+  src: url("fonts/source-serif-4-latin-400-normal.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Source Serif 4";
+  font-weight: 400;
+  font-style: italic;
+  src: url("fonts/source-serif-4-latin-400-italic.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Source Serif 4";
+  font-weight: 600;
+  src: url("fonts/source-serif-4-latin-600-normal.woff2") format("woff2");
+}
+
+/* Colours used everywhere on the site.
+   Teal = study, amber = work, crimson = research. The timeline uses the same three. */
+:root {
+  --paper: #ECEFF3;
+  --panel: #FFFFFF;
+  --ink: #14213D;
+  --muted: #55607A;
+  --line: #C5CCD8;
+  --study: #1B7F79;
+  --work: #C98A12;
+  --research: #A8284F;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 70px;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: 19px;
+  line-height: 1.6;
+}
+
+a {
+  color: var(--ink);
+  text-decoration-color: var(--research);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+}
+a:hover {
+  color: var(--research);
+}
+a:focus-visible {
+  outline: 3px solid var(--research);
+  outline-offset: 3px;
+}
+
+h1, h2, h3, nav, .date, th {
+  font-family: "Archivo", Arial, sans-serif;
+}
+
+/* Everything sits in one centred column. */
+.wrap {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ---------- Top navigation ---------- */
+header {
+  position: sticky;
+  top: 0;
+  background: var(--ink);
+  z-index: 10;
+}
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 26px;
+  padding: 14px 0;
+  font-weight: 500;
+  font-size: 16px;
+}
+nav a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+nav a:hover {
+  color: #FFFFFF;
+  text-decoration: underline;
+  text-decoration-color: var(--work);
+}
+nav a:focus-visible {
+  outline-color: #FFFFFF;
+}
+nav .name {
+  font-weight: 800;
+  margin-right: auto;
+}
+
+/* ---------- Home ---------- */
+#home {
+  padding: 72px 0 40px;
+}
+h1 {
+  font-weight: 800;
+  font-size: clamp(52px, 10vw, 124px);
+  line-height: 0.95;
+  letter-spacing: -0.03em;
+  margin: 0 0 28px;
+}
+.intro {
+  font-size: clamp(21px, 2.6vw, 27px);
+  line-height: 1.4;
+  max-width: 34em;
+  margin: 0 0 48px;
+}
+
+/* The timeline scrolls sideways on a narrow phone instead of shrinking until it is unreadable. */
+.timeline {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  padding: 20px 20px 12px;
+  overflow-x: auto;
+}
+.timeline svg {
+  display: block;
+  width: 100%;
+  min-width: 760px;
+  height: auto;
+  font-family: "Archivo", Arial, sans-serif;
+}
+.timeline h2 {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0;
+  margin: 0 0 4px;
+}
+.key {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 22px;
+  margin: 0 0 10px;
+  padding: 0;
+  list-style: none;
+  font-family: "Archivo", Arial, sans-serif;
+  font-size: 15px;
+  color: var(--muted);
+}
+.key span {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin-right: 7px;
+  vertical-align: -1px;
+}
+
+/* ---------- Sections ---------- */
+section {
+  padding: 56px 0;
+  border-top: 1px solid var(--line);
+}
+#home {
+  border-top: none;
+}
+h2 {
+  font-weight: 800;
+  font-size: clamp(32px, 5vw, 50px);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  margin: 0 0 28px;
+}
+h3 {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.25;
+  margin: 0 0 6px;
+}
+p {
+  max-width: 36em;
+  margin: 0 0 18px;
+}
+
+/* ---------- Skills: skill on the left, evidence on the right ---------- */
+.skills {
+  margin: 0;
+}
+.skills div {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 24px;
+  padding: 18px 0;
+  border-top: 1px solid var(--line);
+}
+.skills dt {
+  font-family: "Archivo", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+}
+.skills dd {
+  margin: 0;
+  max-width: 36em;
+}
+
+/* ---------- Experience entries ---------- */
+.entry {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 24px;
+  padding: 22px 0 22px 20px;
+  margin-bottom: 18px;
+  border-left: 8px solid var(--line);
+  background: var(--panel);
+}
+.entry.study { border-left-color: var(--study); }
+.entry.work { border-left-color: var(--work); }
+.entry.research { border-left-color: var(--research); }
+.entry > div {
+  padding-right: 24px;
+}
+.date {
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--muted);
+  padding-top: 4px;
+}
+.entry p:last-child {
+  margin-bottom: 0;
+}
+
+figure {
+  margin: 22px 0 6px;
+  max-width: 620px;
+}
+figure svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  font-family: "Archivo", Arial, sans-serif;
+}
+figcaption {
+  font-size: 16px;
+  font-style: italic;
+  color: var(--muted);
+  margin-top: 8px;
+}
+
+/* ---------- Achievements ---------- */
+.facts {
+  margin: 0 0 36px;
+  padding: 0;
+  list-style: none;
+  max-width: 36em;
+}
+.facts li {
+  padding: 12px 0;
+  border-top: 1px solid var(--line);
+}
+.facts strong {
+  font-family: "Archivo", Arial, sans-serif;
+  font-weight: 700;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 620px;
+  background: var(--panel);
+}
+caption {
+  text-align: left;
+  font-family: "Archivo", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+th, td {
+  text-align: left;
+  padding: 9px 14px;
+  border: 1px solid var(--line);
+}
+th {
+  font-weight: 700;
+  font-size: 16px;
+  background: var(--ink);
+  color: #FFFFFF;
+  border-color: var(--ink);
+}
+
+/* ---------- Contact ---------- */
+#contact {
+  background: var(--ink);
+  color: #FFFFFF;
+  border-top: none;
+}
+#contact a {
+  color: #FFFFFF;
+  text-decoration-color: var(--work);
+}
+#contact a:focus-visible {
+  outline-color: #FFFFFF;
+}
+.email {
+  font-family: "Archivo", Arial, sans-serif;
+  font-weight: 700;
+  font-size: clamp(20px, 3.6vw, 34px);
+  overflow-wrap: anywhere;
+}
+
+/* ---------- Phones ---------- */
+@media (max-width: 700px) {
+  body {
+    font-size: 18px;
+  }
+  .skills div,
+  .entry {
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+  #home {
+    padding-top: 44px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}

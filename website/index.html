@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Logan Campbell | Computer Science Portfolio</title>
+  <meta name="description" content="Portfolio of Logan Campbell, computer science student at Mount Royal University. Scheduling research, C, C++ and 68000 assembly.">
+  <meta name="author" content="Logan Campbell">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <nav class="wrap">
+    <a class="name" href="#home">Logan Campbell</a>
+    <a href="#about">About me</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#achievements">Achievements</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+
+<section id="home">
+  <div class="wrap">
+    <h1>Logan Campbell</h1>
+    <p class="intro">I am a computer science student at Mount Royal University and I like working close to the machine. I spent last summer researching processor scheduling, I write C and 68000 assembly, and I am looking for a co-op placement in systems software.</p>
+
+    <div class="timeline">
+      <h2>How I got here</h2>
+      <ul class="key">
+        <li><span style="background:#1B7F79"></span>Study</li>
+        <li><span style="background:#C98A12"></span>Work</li>
+        <li><span style="background:#A8284F"></span>Research</li>
+      </ul>
+
+      <!-- Each year is 90 units wide. 2017 starts at x = 50, so 2027 ends at x = 950. -->
+      <svg viewBox="0 0 1000 300" role="img" aria-label="Timeline from 2017 to today. Tutor at Access Tutoring and pure mathematics at the University of Calgary from 2017 to 2019. Server at Earls Banff from 2019 to 2023. Crew lead at Liam's Property Care in summer 2023. Computer science at Mount Royal University from 2023 to now. Research assistant at Mount Royal University in summer 2026.">
+
+        <!-- year lines -->
+        <g stroke="#C5CCD8" stroke-width="1">
+          <line x1="50" y1="10" x2="50" y2="262"/>
+          <line x1="140" y1="10" x2="140" y2="262"/>
+          <line x1="230" y1="10" x2="230" y2="262"/>
+          <line x1="320" y1="10" x2="320" y2="262"/>
+          <line x1="410" y1="10" x2="410" y2="262"/>
+          <line x1="500" y1="10" x2="500" y2="262"/>
+          <line x1="590" y1="10" x2="590" y2="262"/>
+          <line x1="680" y1="10" x2="680" y2="262"/>
+          <line x1="770" y1="10" x2="770" y2="262"/>
+          <line x1="860" y1="10" x2="860" y2="262"/>
+          <line x1="950" y1="10" x2="950" y2="262"/>
+        </g>
+        <line x1="50" y1="262" x2="950" y2="262" stroke="#14213D" stroke-width="2"/>
+
+        <!-- year labels -->
+        <g font-size="14" fill="#55607A" text-anchor="middle">
+          <text x="50" y="284">2017</text>
+          <text x="140" y="284">2018</text>
+          <text x="230" y="284">2019</text>
+          <text x="320" y="284">2020</text>
+          <text x="410" y="284">2021</text>
+          <text x="500" y="284">2022</text>
+          <text x="590" y="284">2023</text>
+          <text x="680" y="284">2024</text>
+          <text x="770" y="284">2025</text>
+          <text x="860" y="284">2026</text>
+          <text x="950" y="284">2027</text>
+        </g>
+
+        <!-- today -->
+        <line x1="939" y1="10" x2="939" y2="262" stroke="#14213D" stroke-width="2" stroke-dasharray="5 5"/>
+
+        <g font-size="14" font-weight="500" fill="#14213D">
+          <!-- tutor, September 2017 to June 2019 -->
+          <rect x="110" y="20" width="165" height="30" fill="#C98A12"/>
+          <text x="284" y="40">Tutor, Access Tutoring</text>
+
+          <!-- University of Calgary, 2017 to 2019 -->
+          <rect x="110" y="60" width="150" height="30" fill="#1B7F79"/>
+          <text x="269" y="80">Pure mathematics, University of Calgary</text>
+
+          <!-- Earls Banff, September 2019 to April 2023 -->
+          <rect x="290" y="100" width="330" height="30" fill="#C98A12"/>
+          <text x="302" y="120">Server, Earls Banff</text>
+
+          <!-- crew lead, summer 2023 -->
+          <rect x="628" y="140" width="22" height="30" fill="#C98A12"/>
+          <text x="620" y="160" text-anchor="end">Crew lead, Liam's Property Care</text>
+
+          <!-- Mount Royal University, September 2023 to now -->
+          <rect x="650" y="180" width="289" height="30" fill="#1B7F79"/>
+          <text x="662" y="200" fill="#FFFFFF">Computer science, Mount Royal</text>
+
+          <!-- research assistant, summer 2026 -->
+          <rect x="890" y="220" width="30" height="30" fill="#A8284F"/>
+          <text x="882" y="240" text-anchor="end">Research assistant, Mount Royal</text>
+        </g>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap">
+    <h2>About me</h2>
+    <p>I did not take the straight road into computer science. In 2017 I started an honours degree in pure mathematics at the University of Calgary and tutored math and French on the side. I left in 2019, moved to Banff, and spent close to four years serving tables at Earls. After that I led a property care crew for a summer.</p>
+    <p>In 2023 I came back to school at Mount Royal University, this time for computer science. The math never left. I have kept taking it alongside my computing courses: abstract algebra, cryptography, numerical analysis, linear algebra. What changed is that I found the part of computing where math and machines meet, which is the low-level end: how a processor decides what to run next, how C turns into assembly, how a program talks to hardware.</p>
+    <p>In the summer of 2026 I worked as a research assistant at Mount Royal, extending a C++ simulator used to study processor scheduling. That summer confirmed what I want to do.</p>
+    <h3>What I value</h3>
+    <p>I want to understand things from the ground up. I would rather write something small that I can explain line by line than assemble something large that I cannot. The years I spent working before coming back taught me the other half: show up, do the work properly, and be straight with the people who depend on you.</p>
+    <h3>What I am looking for</h3>
+    <p>A co-op placement where I can work on systems software: operating systems, schedulers, compilers, embedded code, or legacy code that needs someone patient. Next semester I am taking operating systems, distributed systems and software engineering. I plan to carry my scheduling research into my senior project, and after graduating I hope to continue into a master's degree.</p>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <h2>Skills and competencies</h2>
+    <dl class="skills">
+      <div>
+        <dt>Systems programming</dt>
+        <dd>C, C++ and 68000 assembly. I extended a ten-year-old C++ research simulator, and in Computing Machinery I and II I have been writing assembly and C89 for the Atari ST, a machine with no operating system safety net.</dd>
+      </div>
+      <div>
+        <dt>Mathematics</dt>
+        <dd>Abstract algebra, cryptography, numerical analysis, linear algebra and mathematical methods at Mount Royal, on top of two years of pure mathematics at the University of Calgary. It is the reason I can read a scheduling paper and follow the proofs.</dd>
+      </div>
+      <div>
+        <dt>Research</dt>
+        <dd>Reading published work, implementing what it describes, and checking whether the results hold. Over one summer I ran hundreds of simulations to test results from the scheduling literature against the schedulers already in the simulator.</dd>
+      </div>
+      <div>
+        <dt>Communication</dt>
+        <dd>I presented my research at Mount Royal's student research conference. Before that I spent two years explaining math and French one-on-one as a tutor, and four years talking to strangers for a living as a server.</dd>
+      </div>
+      <div>
+        <dt>Leadership and teamwork</dt>
+        <dd>As a crew lead I planned the jobs, ran the team on site and dealt with the clients. In a restaurant, nothing reaches a table unless the kitchen and the floor work together.</dd>
+      </div>
+      <div>
+        <dt>Other languages and tools</dt>
+        <dd>Java, Python, C#, Rust, SQL, Bash, PowerShell, MATLAB, LaTeX, HTML and CSS. I wrote this site by hand in HTML and CSS. I also speak conversational French.</dd>
+      </div>
+    </dl>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap">
+    <h2>Experience</h2>
+
+    <div class="entry research">
+      <div class="date">Summer 2026<br>Mount Royal University</div>
+      <div>
+        <h3>Research assistant, processor scheduling</h3>
+        <p>A speed scaling processor can change how fast it runs. Going faster finishes jobs sooner but costs more energy, so there are two decisions to make: which job runs next, and how fast. I worked on a C++ simulator built to study those decisions.</p>
+        <p>My job was to extend it. I took size-based scheduling policies from published papers and implemented them in the simulator, working inside a code base that was about ten years old. Then I ran hundreds of simulations to test whether the results in the literature held up against the schedulers the simulator already had. I presented the work at Mount Royal's student research conference, and I plan to continue it as my senior project.</p>
+        <figure>
+          <svg viewBox="0 0 640 250" role="img" aria-label="Diagram. As the number of jobs in the system rises from one to three and falls back to one, the processor speed rises and falls with it.">
+            <text x="50" y="18" font-size="14" font-weight="700" fill="#14213D">Jobs in the system</text>
+            <g fill="#A8284F">
+              <rect x="60" y="88" width="70" height="22"/>
+
+              <rect x="150" y="88" width="70" height="22"/>
+              <rect x="150" y="62" width="70" height="22"/>
+
+              <rect x="240" y="88" width="70" height="22"/>
+              <rect x="240" y="62" width="70" height="22"/>
+              <rect x="240" y="36" width="70" height="22"/>
+
+              <rect x="330" y="88" width="70" height="22"/>
+              <rect x="330" y="62" width="70" height="22"/>
+              <rect x="330" y="36" width="70" height="22"/>
+
+              <rect x="420" y="88" width="70" height="22"/>
+              <rect x="420" y="62" width="70" height="22"/>
+
+              <rect x="510" y="88" width="70" height="22"/>
+            </g>
+            <line x1="50" y1="112" x2="590" y2="112" stroke="#14213D" stroke-width="2"/>
+
+            <text x="50" y="142" font-size="14" font-weight="700" fill="#14213D">Processor speed</text>
+            <path d="M50 205 H140 V180 H230 V155 H410 V180 H500 V205 H590" fill="none" stroke="#14213D" stroke-width="4"/>
+            <line x1="50" y1="230" x2="590" y2="230" stroke="#14213D" stroke-width="2"/>
+            <text x="590" y="247" font-size="13" fill="#55607A" text-anchor="end">time</text>
+          </svg>
+          <figcaption>The idea behind speed scaling: the processor speeds up when more jobs are waiting and slows down to save energy when there are few.</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <div class="entry study">
+      <div class="date">Fall 2026, in progress<br>Computing Machinery II</div>
+      <div>
+        <h3>In the Pocket, a rhythm game for the Atari ST</h3>
+        <p>A team project written in C89 for a computer from 1985. Notes travel along a single music staff, each lane on its own line of the staff, and the player has to hit them in time. We decided early that songs would not contain chords, which keeps both the playing and the code simpler.</p>
+        <p>My part is the game model: the code that holds the state of the game, kept separate from drawing and input. On a machine this small, nothing is hidden from you. There is no library to lean on for graphics or timing, so every design decision shows up directly in the code.</p>
+      </div>
+    </div>
+
+    <div class="entry study">
+      <div class="date">Personal project</div>
+      <div>
+        <h3>Pony Prance</h3>
+        <p>An endless runner for Windows starring a pony, with a red and silver grunge metal look. It is the project I work on for fun. A 2D fighting game set in the same world is planned next, starting with a single character and controller support.</p>
+      </div>
+    </div>
+
+    <div class="entry work">
+      <div class="date">Summer 2023<br>Liam's Property Care</div>
+      <div>
+        <h3>Crew lead</h3>
+        <p>I ran a crew doing mowing, hedge trimming, small repairs and landscaping to client designs, often across several sites in the same week. This was my first time being the person responsible for other people's work, and for telling a client when something would be late.</p>
+      </div>
+    </div>
+
+    <div class="entry work">
+      <div class="date">September 2019 to April 2023<br>Earls Banff</div>
+      <div>
+        <h3>Server</h3>
+        <p>Close to four years in a busy restaurant in a tourist town. I took orders, handled payments and sorted out complaints, and I learned to stay calm and organised while keeping track of a dozen things at once. It is also where I learned to work hard.</p>
+      </div>
+    </div>
+
+    <div class="entry work">
+      <div class="date">September 2017 to June 2019<br>Access Tutoring</div>
+      <div>
+        <h3>Tutor, mathematics and French</h3>
+        <p>One-on-one tutoring for high school and college students, with lesson plans built around each student. Tutoring taught me that you do not really understand something until you can explain it to someone who is stuck.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="achievements">
+  <div class="wrap">
+    <h2>Achievements</h2>
+    <ul class="facts">
+      <li><strong>3.90 GPA</strong> across 63 credit hours at Mount Royal University.</li>
+      <li><strong>Dean's Honour Roll</strong>, Fall 2024, with a 4.0 term.</li>
+      <li><strong>Hired as a research assistant</strong> for summer 2026.</li>
+      <li><strong>Presented my research</strong> at Mount Royal's student research conference.</li>
+    </ul>
+
+    <table>
+      <caption>Selected courses</caption>
+      <tr><th>Course</th><th>Grade</th></tr>
+      <tr><td>Abstract Algebra</td><td>A</td></tr>
+      <tr><td>Linear Algebra II</td><td>A</td></tr>
+      <tr><td>Cryptography</td><td>A-</td></tr>
+      <tr><td>Numerical Analysis</td><td>A-</td></tr>
+      <tr><td>Mathematical Methods</td><td>A-</td></tr>
+      <tr><td>Information Structures I</td><td>A</td></tr>
+      <tr><td>Introduction to Databases</td><td>A</td></tr>
+      <tr><td>Computing Machinery I</td><td>A-</td></tr>
+      <tr><td>Introduction to Public Speaking</td><td>A</td></tr>
+    </table>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <h2>Contact</h2>
+    <p>I am looking for a co-op placement in systems software. If that sounds like your team, I would like to hear from you.</p>
+    <p class="email"><a href="mailto:logan.edward.campbell@gmail.com">logan.edward.campbell@gmail.com</a></p>
+    <p><a href="Logan_Campbell_Resume.pdf">Download my resume (PDF)</a></p>
+  </div>
+</section>
+
+</main>
+
+</body>
+</html>
